@@ -36,18 +36,32 @@ a {
 }
 
 .navbar ul {
+  
   display: flex;
 }
 
 .navbar ul li {
   list-style: none;
+  text-decoration: none;
+  color: #c5c5c5;
   margin: 30px;
+}
+
+.navbar ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #c5c5c5;
+}
+
+.navbar ul li a:hover {
+  color: #f7f7f7;
+  transition: color 0.5s ease-in-out;
 }
 
 .container {
   width: 1100px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 10px 20px;
 }
 
 .avatar img {
@@ -87,12 +101,6 @@ a {
   flex-shrink: 0;
   border-radius: 3.125rem;
   border: 1px solid var(--Primary-Color, #fff);
-  background: linear-gradient(
-      0deg,
-      var(--Primary-Color, #fff) 0%,
-      var(--Primary-Color, #fff) 100%
-    ),
-    var(--Primary-Color, #fff);
   font-size: 22px;
   font-family: "Poppins", sans-serif;
 }
@@ -114,6 +122,18 @@ a {
   font-family: "Poppins", sans-serif;
   color: white;
 }
+
+/* .btn-cv:hover{
+  background: #8f8f8f;
+  color: black;
+  transition: background 1.2s ease-in-out;
+}
+
+.btn-contact:hover{
+  background: #020202;
+  color: #ffffff;
+  transition: background 1.2s ease-in-out;
+} */
 
 .experence-with {
   text-align: center;
@@ -151,6 +171,7 @@ a {
 }
 
 .projheading {
+  padding-top: 20px;
   background: var(
     --Orange-Gradient,
     linear-gradient(180deg, #ff8660 0%, #d5491d 100%)
@@ -163,7 +184,7 @@ a {
 .projects {
   display: flex;
   justify-content: space-between;
-  margin: 40px 0;
+  margin-top: 40px;
 }
 
 .proj-items img {
@@ -191,6 +212,7 @@ a {
 }
 
 .expheading {
+  padding-top: 30px;
   background: var(
     --Blue-Gradient,
     linear-gradient(180deg, #5badff 0%, #1373d1 100%)
@@ -201,16 +223,19 @@ a {
 }
 
 .experiences-title-container {
+  padding-right: 20px;
   justify-content: space-between;
   align-items: center;
   display: flex;
 }
 
 .experiences-title-container .date {
+  padding-left: 20px;
   margin-left: auto;
 }
 
 .experience-title {
+  padding: 0 20px;
   color: white;
   font-size: 22px;
   font-weight: bold;
@@ -236,7 +261,23 @@ a {
   margin-top: 20px;
 }
 
-footer {
+.copyright {
+  display: flex;
   background-color: #191919;
-  
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.all-projects {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.all-projects span:hover {
+  color: rgb(247, 243, 240);
+  transition: color 0.5s ease-in-out;
 }
